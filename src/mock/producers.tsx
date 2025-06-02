@@ -5,9 +5,9 @@ import potager from '../assets/produtores/potager.png';
 import salad from '../assets/produtores/salad.png';
 
 
-const randomresult = (min: number, max: number) =>
+const randomResult = (min: number, max: number) =>
 {
-    return Math.random() * (max - min + 1) + min;
+    return Math.floor (Math.random() * (max - min + 1)) + min;
 }
 
 const producers = 
@@ -18,32 +18,32 @@ const producers =
         {
             name: "Green",
             image: green,
-            distance: `${randomresult(1, 500)}m`,
-            stars: randomresult(1, 5),
+            distance: `${randomResult(1, 500)}m`,
+            stars: randomResult(1, 5),
         },
         {
             name: "Grow",
             image: grow,
-            distance: `${randomresult(1, 500)}m`,
-            stars: randomresult(1, 5),
+            distance: `${randomResult(1, 500)}m`,
+            stars: randomResult(1, 5),
         },
         {
             name: "Jenny Jack Farm",
             image: jennyJack,
-            distance: `${randomresult(1, 500)}m`,
-            stars: randomresult(1, 5),
+            distance: `${randomResult(1, 500)}m`,
+            stars: randomResult(1, 5),
         },
         {
             name: "Potager",
             image: potager,
-            distance: `${randomresult(1, 500)}m`,
-            stars: randomresult(1, 5),
+            distance: `${randomResult(1, 500)}m`,
+            stars: randomResult(1, 5),
         },
         {
             name: "Salad",
             image: salad,
-            distance: `${randomresult(1, 500)}m`,
-            stars: randomresult(1, 5),
+            distance: `${randomResult(1, 500)}m`,
+            stars: randomResult(1, 5),
         },
     ]
 }
